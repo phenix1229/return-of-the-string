@@ -30,7 +30,7 @@ function twoCharacters(str, num1, num2) {
 }
 
 function initials(str) {
-  let firstInitial = str[0];
+  let firstInitial = firstCharacter(str);
   let secondInitial = str[str.indexOf(' ') + 1];
   return firstInitial + '.' + secondInitial + '.';
 }
