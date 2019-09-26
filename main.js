@@ -31,10 +31,16 @@ function twoCharacters(str, num1, num2) {
 
 function initials(str) {
   let firstInitial = str[0];
-  
+  let secondInitial = str[str.indexOf(' ') + 1];
+  return firstInitial + '.' + secondInitial + '.';
 }
 
-function yeller() {
+function yeller(str) {
+  let scream = capitalize(str);
+  let loudScream = exclaim(scream);
+  let louderScream = exclaim(loudScream);
+  let loudestScream = exclaim(louderScream);
+  return loudestScream;
 }
 
 
